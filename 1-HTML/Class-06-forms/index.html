@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 06 Forms</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <fieldset>
+        <legend>Login</legend>
+        <section>
+          <label for="userEmail">Email:</label>
+          <input
+            type="email"
+            name="userEmail"
+            id="userEmail"
+            placeholder="Digite seu melhor email"
+            required
+          />
+        </section>
+        <br />
+        <section>
+          <label for="userPassword">Senha:</label>
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            placeholder="Digite uma senha"
+            required
+          />
+        </section>
+        <br />
+        <button type="submit" form="myForm">Logar</button>
+      </fieldset>
+    </form>
+    <br>
+    <form>
+      <input type="text" placeholder="Digite um texto" />
+    </form>
+    <br />
+    <form>
+      <input
+        type="number"
+        name="userAge"
+        placeholder="Digite sua idade"
+        inputmode="numeric"
+        min="16"
+        max="75"
+        minlength="2"
+      />
+      <br><br>
+    </form>
+    <input type="date" value="2006-05-01" name="born" />
+    <br><br>
+    <input type="range"
+    min="0"
+    max="100"
+    name="volume"
+    value="80"
+    step="10">
+    <br><br>
+    <input type="file" accept="image/*">
+    <br><br>
+
+    <input type="color" name="favoriteColor">
+    <br><br>
+
+    <section>
+      <input type="checkbox" id="audio">
+      <label for="audio">Áudio</label>
+    </section>
+    <section>
+      <input type="checkbox" id="video">
+      <label for="video">Vídeo</label>
+    </section>
+
+<br>
+    <button>Enviar</button>
+  </body>
+</html>

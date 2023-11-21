@@ -1,0 +1,38 @@
+
+
+h1 {
+    font-size: 42px;
+}
+
+h1:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.square {
+    height: 120px;
+    width: 120px;
+    background: grey;
+    transition-duration: 200ms;
+}
+
+.square:hover {
+    background: darkblue;
+    cursor: pointer;
+    width: 200px;
+    height: 240px;
+    transform: scale(2);
+}
+
+.square:active {
+    /* outline: 1px solid red; */
+}
+
+input {
+    margin-top: 24px;
+}
+
+.input:focus {
+    outline: 1px solid red;
+}

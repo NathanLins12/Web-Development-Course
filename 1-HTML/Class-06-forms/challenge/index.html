@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Forms</title>
+    <style>
+        body{
+            background: #e5e5e5;
+        }
+        header{
+            text-align: center;
+        }
+        main{
+            width: 22rem;
+            margin: auto;
+            background: #d5cbcb;
+            padding: 1.6rem;
+            border-radius: 8px;
+        }
+        textarea{
+            resize: none;
+        }
+        button{
+            background: #b8adad;
+            border-radius: 7px;
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Alunos</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>DADOS PESSOAIS</legend>
+                <section>
+                    <label for="name">Nome:</label>
+                    <input 
+                    type="text"
+                    placeholder="Digite seu nome completo..."
+                    id="name"
+                    name="name"
+                    required autofocus
+                    >
+                </section>
+                <br>
+                <section>
+                    <label for="birth">Nascimento:</label>
+                    <input 
+                    type="date"
+                    id="birth"
+                    name="birth"
+                    required
+                    >
+                </section>
+                <br>
+                <section>
+                    <label for="RG">RG:</label>
+                    <input 
+                    type="text"
+                    id="RG"
+                    name="RG"
+                    minlength="8"
+                    maxlength="11"                    
+                    placeholder="Digite seu RG"
+                    required
+                    >
+                </section>
+                <br>
+                <section>
+                    <label for="CPF">CPF:</label>
+                    <input 
+                    type="text"
+                    id="CPF"
+                    name="CPF"
+                    minlength="11"
+                    maxlength="11"
+                    placeholder="Digite seu CPF"
+                    required
+                    >
+                </section>
+                <br>
+                <section>
+                    <label for="male">Masculino:</label>
+                    <input 
+                    type="radio"
+                    id="male"
+                    name="sexo"
+                    value="M">
+                    
+                    <label for="female">Feminino:</label>
+                    <input 
+                    type="radio"
+                    id="female"
+                    name="sexo"
+                    value="F"
+                    >
+                </section>
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <legend>LINGUAGEM DE DOMÍNIO</legend>
+                <section>
+                    <label for="html">HTML</label>
+                    <input type="checkbox"
+                    id="html"
+                    name="html">
+
+                    <label for="css">CSS</label>
+                    <input type="checkbox"
+                    id="css"
+                    name="css">
+
+                    <label for="javaScript">javaScript</label>
+                    <input type="checkbox"
+                    id="javaScript"
+                    name="javaScript">
+
+                    <label for="SQL">SQL</label>
+                    <input type="checkbox"
+                    id="SQL"
+                    name="SQL">
+                </section>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>DADOS DE LOGIN</legend>
+                <section>
+                    <label for="email">Email:</label>
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite o seu melhor Email"
+                    required>
+                </section>
+                <br>
+                <section>
+                    <label for="password">Senha:</label>
+                    <input type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Digite a sua melhor senha"
+                    required>
+                </section>
+                <br>
+                <section>
+                    <label for="photo">Foto:</label>
+                    <input type="file"
+                    name="photo"
+                    id="photo"
+                    accept="image/*">
+                </section>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>OBSERVAÇÕES</legend>
+                <section>
+                    <label for="observation" hidden></label>
+                    <textarea name="observation" id="observation" cols="40" rows="10"
+                    maxlength="360"
+                    placeholder="Faça observações sobre o seu perfil.."></textarea>
+                </section>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Refazer</button>
+        </form>
+    </main>
+</body>
+</html>

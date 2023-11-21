@@ -1,0 +1,42 @@
+.square {
+    background: red;
+    color: white;
+
+    width: 120px;
+    height: 120px;
+
+    font-size: 24px;
+
+    border: 4px solid black;
+
+padding: 10px;
+
+margin: 10px;
+}
+
+.square2 {
+    background: purple;
+    color: white;
+
+    width: 120px;
+    height: 120px;
+
+    font-size: 24px;
+
+    border: 4px solid black;
+
+padding: 10px;
+
+margin: 10px 5px 15px 24px;
+
+display: inline-block;
+
+}
+
+.square {
+    margin-bottom: 20px;
+}
+
+.square2 {
+    margin-top: 16px;
+}
