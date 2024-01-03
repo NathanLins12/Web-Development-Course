@@ -34,6 +34,7 @@ console.log(arrayTechs.slice(1, 3));
 console.log(arrayTechs.slice(-3, -1));
 
 console.log(arrayTechs.splice(1, 3));
+console.log(arrayTechs.splice(1, 4));
 
 console.log(myArray.concat(arrayTechs));
 
